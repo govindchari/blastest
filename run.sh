@@ -1,0 +1,1 @@
+export LD_LIBRARY_PATH=OpenBLAS/ && gcc -o gemv_test custom_blas.c gemv_test.c -I OpenBLAS/ -LOpenBLAS/ -lopenblas && ./gemv_test && python3 plot.py
